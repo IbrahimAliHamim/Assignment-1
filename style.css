@@ -1,0 +1,150 @@
+:root {
+  --main-color:rgb(17, 190, 17) !important;
+  --hover-color:rgb(100, 175, 100) !important;
+}
+
+.my-card-img{
+  width: 50px;
+  align-self: center;
+}
+
+.card{
+  border: none !important; 
+}
+
+.play-icon{
+  width: 60px;
+  align-self: center;
+}
+
+.hero-background{
+    background-image: url('https://web.dev/static/images/new-to-the-web-oct_480.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.hero-title{
+  margin-top: 180px;
+
+}
+
+.nav-logo{
+  height: 40px;
+}
+
+.site-name{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.hero-background {
+  padding: 100px 0;
+  button{
+    background-color: var(--main-color);
+    border: none;
+  }
+}
+
+.hero-background .btn:hover{
+  background-color: var(--hover-color) !important;
+}
+
+.hero-background .btn span{
+  font-weight: bolder !important;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.page-name {
+  background-color: #007bff;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+
+.features {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  h2{
+    color: var(--main-color);
+  }
+}
+
+.features img{
+  height: 80% !important;
+}
+
+.features .row .mb-4 .card .card-body .btn{
+  background-color: var(--main-color);
+  border: none;
+}
+
+
+.card-title {
+  color: var(--main-color);
+}
+
+
+.card-text {
+  color: #495057; 
+}
+
+/* Responsive images */
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+form .btn{
+  background-color: var(--main-color);
+  border: none;
+}
+
+form .btn:hover{
+  background-color: var(--hover-color) !important;
+}
+
+/* footer section */
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+}
+.footer-links {
+  margin-top: 20px;
+}
+.footer-links a {
+  color: #343a40;
+  margin-right: 20px;
+  text-decoration: none !important;
+}
+.footer-links a:hover {
+  color: #28a745;
+  text-decoration: none;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons a {
+  color: #343a40;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.social-icons a:hover {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.footer .social-icons img{
+  width: 5%;
+}

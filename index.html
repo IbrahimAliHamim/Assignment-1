@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- custom Css -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="nav-logo" src="data:image/png;base64,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" alt="Logo">
+      </a>
+      <span class="site-name">PlantPalace</span>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#plants">Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SIGN UP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Hero Section -->
+
+  <div id="home" class="container-fluid hero-background">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white hero-title">Welcome To PlantPalace</h1>
+        <p class="text-white fw-bolder ">Your Oasis of Green Delight! </p>
+        <button class="btn btn-lg px-5"><span>LOG IN</span></button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!------- Features Section --------->
+
+  <div id="plants" class="container mt-3 features">
+    <h2 class="text-center">Plants</h2>
+    <div class="row mt-5">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/10/2021/05/2048x1365-Pothos_epipremnum-SEO-GettyImages-1249996690-6148620.jpg?quality=90&resize=556,371" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Green Plant</h5>
+                    <p class="card-text">A unique cactus with sharp thorns for a desert vibe.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/10/2021/05/2048x1365-Pothos_epipremnum-SEO-GettyImages-1249996690-6148620.jpg?quality=90&resize=556,371" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sharp Thorns Cactus</h5>
+                    <p class="card-text">A unique cactus with sharp thorns for a desert vibe.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/10/2021/05/2048x1365-Pothos_epipremnum-SEO-GettyImages-1249996690-6148620.jpg?quality=90&resize=556,371" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sharp Thorns Cactus</h5>
+                    <p class="card-text">A unique cactus with sharp thorns for a desert vibe.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/10/2021/05/2048x1365-Pothos_epipremnum-SEO-GettyImages-1249996690-6148620.jpg?quality=90&resize=556,371" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sharp Thorns Cactus</h5>
+                    <p class="card-text">A unique cactus with sharp thorns for a desert vibe.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/10/2021/05/2048x1365-Pothos_epipremnum-SEO-GettyImages-1249996690-6148620.jpg?quality=90&resize=556,371" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sharp Thorns Cactus</h5>
+                    <p class="card-text">A unique cactus with sharp thorns for a desert vibe.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/10/2021/05/2048x1365-Pothos_epipremnum-SEO-GettyImages-1249996690-6148620.jpg?quality=90&resize=556,371" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sharp Thorns Cactus</h5>
+                    <p class="card-text">A unique cactus with sharp thorns for a desert vibe.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the structure for additional cards -->
+
+    </div>
+</div>
+
+
+
+
+  <!-- Age Checker -->
+
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title text-center">Age Checker</h5>
+                </div>
+                <div class="card-body">
+                    <form class="shadow-sm">
+                        <div class="form-group">
+                            <label for="ageInput">Enter Your Age:</label>
+                            <input type="number" class="form-control" id="ageInput" placeholder="Enter your age">
+                        </div>
+                        <button type="button" class="btn btn-primary mt-3" onclick="checkAge()">Check Age</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal for displaying result -->
+<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="resultModalLabel">Age Result</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert" role="alert" id="resultMessage"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- footer Section -->
+
+<footer class="footer bg-white shadow-sm mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <p class="footer-logo">Your Plant Nursery</p>
+        <p>Your go-to destination for premium plants and expert advice.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Plants</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h5>Connect With Us</h5>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-facebook"><img class="w-2" src="https://thumbs.dreamstime.com/b/facebook-logo-icon-voronezh-russia-november-round-blue-color-164585774.jpg" alt=""></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"><img  class="w-2"src="https://seeklogo.com/images/T/twitter-icon-circle-blue-logo-0902F48837-seeklogo.com.png" alt=""></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"><img class="w-2" src="https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?size=338&ext=jpg&ga=GA1.1.1412446893.1704758400&semt=ais" alt=""></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+  <script>
+    function checkAge() {
+
+        var ageInput = document.getElementById('ageInput');
+        var age = ageInput.value.trim();
+
+
+        if (age === '') {
+            alert('Please enter your age before checking.');
+            return;
+        }
+
+
+        var resultMessage = document.getElementById('resultMessage');
+
+        if (age >= 18) {
+            resultMessage.textContent = "You are an adult.";
+            resultMessage.classList.remove('alert-danger');
+            resultMessage.classList.add('alert-success');
+        } else {
+            resultMessage.textContent = "You are a child.";
+            resultMessage.classList.remove('alert-success');
+            resultMessage.classList.add('alert-danger');
+        }
+
+
+        $('#resultModal').modal('show');
+    }
+</script>
+
+  
+</body>
+</html>
